@@ -1,0 +1,16 @@
+E:\практические\HTCalculator\HTCalculator\bin\Debug\net10.0\HTCalculator.exe
+E:\практические\HTCalculator\HTCalculator\bin\Debug\net10.0\HTCalculator.deps.json
+E:\практические\HTCalculator\HTCalculator\bin\Debug\net10.0\HTCalculator.runtimeconfig.json
+E:\практические\HTCalculator\HTCalculator\bin\Debug\net10.0\HTCalculator.dll
+E:\практические\HTCalculator\HTCalculator\bin\Debug\net10.0\HTCalculator.pdb
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.GeneratedMSBuildEditorConfig.editorconfig
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.AssemblyInfoInputs.cache
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.AssemblyInfo.cs
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.csproj.CoreCompileInputs.cache
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.sourcelink.json
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.dll
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\refint\HTCalculator.dll
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.pdb
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalculator.genruntimeconfig.cache
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\ref\HTCalculator.dll
+E:\практические\HTCalculator\HTCalculator\obj\Debug\net10.0\HTCalcul.4F9B9CF3.Up2Date
