@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 class Program
 {
-    const int LowercaseCount = 26; 
+    const int LowercaseCount = 26;
     const int UppercaseCount = 26;
+    const int RussianLowercaseCount = 33;
+    const int RussiaUppercaseCount = 33;
     const int DigitCount = 10;
-    const int SymbolCount = 33;        
+    const int SymbolCount = 33;  // printable punctuation plus space 
 
     static readonly string[] CommonPasswords =
     {
@@ -53,7 +55,6 @@ class Program
             new AttackScenario("Online, no limits", 10),
             new AttackScenario("Stolen database, slow hash", 10_000),
             new AttackScenario("Stolen database, fast hash", 10_000_000_000),
-            // по заданию со звездочкой добавил 5 сценарий
             new AttackScenario("One videocard, MD5", 100_000_000_000)
         };
     }
@@ -61,26 +62,27 @@ class Program
     static void PrintEstimate(string password, List<AttackScenario> scenarios)
     {
         int poolSize = GetPoolSize(password);
-        
+
         double combinations = Math.Pow(poolSize, password.Length);
 
         Console.WriteLine($"Length: {password.Length}, character pool: {poolSize}");
         Console.WriteLine($"Combinations: {FormatBigNumber(combinations)}");
-
+        Console.WriteLine($"  {"Scenario",-28} {"Full time",-36} Average");
+        
         foreach (AttackScenario scenario in scenarios)
         {
             double seconds = combinations / scenario.GuessesPerSecond;
-            // по зданию добавил колонку со средним временем
             double average = seconds / 2;
-            Console.WriteLine($"  {scenario.Name,-28} {FormatDuration(seconds),-36} {FormatDuration(average)}");
+            Console.WriteLine($"{scenario.Name,-28} {FormatDuration(seconds),-36} {FormatDuration(average)}");
         }
-        
+
     }
-    // этот метод определяет набор символов пароля.
     static int GetPoolSize(string password)
     {
         bool hasLower = false;
         bool hasUpper = false;
+        bool hasRussianLower = false;
+        bool hasRussianUpper = false;
         bool hasDigit = false;
         bool hasSymbol = false;
 
@@ -93,6 +95,14 @@ class Program
             else if (c >= 'A' && c <= 'Z')
             {
                 hasUpper = true;
+            }
+            else if (c >= 'а' && c <= 'я' || c == 'ё')
+            {
+                hasRussianLower |= true;
+            }
+            else if (c >= 'А' && c <= 'Я' || c == 'Ё')
+            {
+                hasRussianUpper = true;
             }
             else if (c >= '0' && c <= '9')
             {
@@ -116,6 +126,16 @@ class Program
             poolSize += UppercaseCount;
         }
 
+        if (hasRussianLower)
+        {
+            poolSize += RussianLowercaseCount;
+        }
+
+        if (hasRussianUpper)
+        {
+            poolSize += RussiaUppercaseCount;
+        }
+
         if (hasDigit)
         {
             poolSize += DigitCount;
@@ -128,7 +148,7 @@ class Program
 
         return poolSize;
     }
-    // этот метод сравнивает ввод со списком и игнорирует регистр.
+    
     static bool IsCommon(string password)
     {
         foreach (string common in CommonPasswords)
@@ -141,12 +161,12 @@ class Program
 
         return false;
     }
-    //этот метод записывает большие числа в виде "мантисса × 10 в степени".
+    
     static string FormatBigNumber(double number)
     {
         if (number < 1_000_000)
         {
-            
+
             return number.ToString("N0");
         }
 
@@ -155,7 +175,7 @@ class Program
         return $"{mantissa:0.0} x 10^{exponent}";
     }
 
-    //этот метод проверяет каждое условие, не меньше ли время следующей единицы измерения
+    
     static string FormatDuration(double seconds)
     {
         const double Minute = 60;
@@ -214,7 +234,7 @@ class Program
         return "longer than the age of the Universe";
     }
 }
-// этот класс собирает два связанных значения в один объект.
+
 class AttackScenario
 {
     public string Name { get; }

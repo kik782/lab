@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HTCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52a343afaa68b4b03aca9cf45939f82368a71eec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94fb3d005f03449bfec745c9da2f8191b9873558")]
 [assembly: System.Reflection.AssemblyProductAttribute("HTCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HTCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
