@@ -5,7 +5,7 @@ class Program
     const int LowercaseCount = 26;
     const int UppercaseCount = 26;
     const int RussianLowercaseCount = 33;
-    const int RussiaUppercaseCount = 33;
+    const int RussianUppercaseCount = 33;
     const int DigitCount = 10;
     const int SymbolCount = 33;  // printable punctuation plus space 
 
@@ -96,11 +96,11 @@ class Program
             {
                 hasUpper = true;
             }
-            else if (c >= 'а' && c <= 'я' || c == 'ё')
+            else if ((c >= 'а' && c <= 'я') || c == 'ё')
             {
-                hasRussianLower |= true;
+                hasRussianLower = true;
             }
-            else if (c >= 'А' && c <= 'Я' || c == 'Ё')
+            else if ((c >= 'А' && c <= 'Я') || c == 'Ё')
             {
                 hasRussianUpper = true;
             }
@@ -133,7 +133,7 @@ class Program
 
         if (hasRussianUpper)
         {
-            poolSize += RussiaUppercaseCount;
+            poolSize += RussianUppercaseCount;
         }
 
         if (hasDigit)
