@@ -23,7 +23,7 @@ class Program
         Console.WriteLine();
         PrintReport(students);
         PrintNeedsHelp(students);
-        SortByAverage(students);
+        
 
         Student best = FindBest(students);
 
@@ -181,22 +181,7 @@ class Program
             Console.WriteLine("Nobody needs help.");
         }
     }
-        static void SortByAverage(Student[] students)
-        {
-            for (int i = 0; i < students.Length - 1; i++)
-            {
-                for (int j = 0; j < students.Length - 1 - i; j++)
-                {
-                    if (students[j].Average() < students[j + 1].Average())
-                    {
-                        Student temp = students[j];
-                        students[j] = students[j + 1];
-                        students[j + 1] = temp;
-                    }
-                }
-            }
-        }
-    }
+}
 
 class Student
 {
@@ -216,7 +201,7 @@ class Student
         foreach (int grade in Grades)
         {
             sum += grade;
-            
+
         }
         return (double)sum / Grades.Length;
     }
