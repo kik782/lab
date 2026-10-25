@@ -1,0 +1,15 @@
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\ShiftReport.exe
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\ShiftReport.deps.json
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\ShiftReport.runtimeconfig.json
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\ShiftReport.dll
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\ShiftReport.pdb
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.GeneratedMSBuildEditorConfig.editorconfig
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.AssemblyInfoInputs.cache
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.AssemblyInfo.cs
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.csproj.CoreCompileInputs.cache
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.dll
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\refint\ShiftReport.dll
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.pdb
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ShiftReport.genruntimeconfig.cache
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\obj\Debug\net10.0\ref\ShiftReport.dll
+E:\Документы\CSharpCourse\FirstConsoleApp\ShiftReport\bin\Debug\net10.0\events.log
